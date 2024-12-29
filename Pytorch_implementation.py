@@ -73,7 +73,7 @@ class MyModel(Module):
         self.add_module('fc1', self.fc1)
         self.add_module('fc2', self.fc2)
 
-    def forwardd(self, x):
+    def forward(self, x):
         # Daten durch die Schichten schicken
         x = self.fc1(x)
         x = torch.relu(x)
