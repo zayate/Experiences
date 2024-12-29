@@ -6,13 +6,17 @@ Workflow:
 
 Data Preparation:
 Loads the diabetes dataset, reduces its dimensions to 1 feature using PCA, and splits the data into training and testing sets.
+
 Model Training:
 A Gaussian Process Regressor with an RBF kernel is trained on the reduced training data.
 The model’s R2-score is computed and saved as a .pkl file.
+
 Visualization:
 The model predicts mean values and uncertainties on the data.
+
 A scatter plot shows:
 Observed data, predictions, and a 95% confidence interval.
+
 Key Highlights:
 
 PCA reduces data complexity for easier visualization.
